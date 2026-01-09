@@ -232,11 +232,13 @@ with tab_resources:
     with l1:
         st.markdown(resource_card("PLAYLIST", "Statistics (Krish Naik)", "Complete Statistics playlist for Data Science.", "https://youtube.com/playlist?list=PLZoTAELRMXVMgtxAboeAx-D9qbnY94Yay&si=ZeS_hMxVuiQ--knf"), unsafe_allow_html=True)
         st.markdown(resource_card("RESOURCE", "Basics of Python", "W3Schools Python Course.", "https://www.w3schools.com/python/default.asp"), unsafe_allow_html=True)
+        st.markdown(resource_card("ALGORITHMIC TRADING", "Algorithmic Trading Using Python", "Learn how to perform algorithmic trading using Python in this complete course.", "https://www.youtube.com/watch?v=xfzGZB4HhEE"), unsafe_allow_html=True)
         st.markdown(resource_card("NEWS", "Trading Economics", "Global financial indicators and news.", "https://tradingeconomics.com/"), unsafe_allow_html=True)
 
     with l2:
         st.markdown(resource_card("MODULE 1", "Zerodha: Stock Markets", "Introduction to Stock Markets.", "https://zerodha.com/varsity/module/introduction-to-stock-markets/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 2", "Zerodha: Tech Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
-
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
+        st.markdown(resource_card("PROBABILITY", "Probability - 50 Challenging Problems", "50 Challenging Problems in Probability Solutions.", "https://youtube.com/playlist?list=PL3YfeZZ7Mdjmhucty7I55jX7RwS30pVAN&si=S9ctK3z-zBRkRGxY"), unsafe_allow_html=True)
+
 
