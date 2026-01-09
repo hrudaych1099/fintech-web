@@ -137,7 +137,7 @@ with c2:
 st.write("---")
 
 #NAVIGATION
-tab_home, tab_resources = st.tabs(["// MANIFESTO", "// KNOWLEDGE BASE"])
+tab_home, tab_resources = st.tabs(["// MANIFESTO", "// RESOURCES"])
 
 with tab_home:
     st.markdown("""
@@ -228,4 +228,5 @@ with tab_resources:
     with l2:
         st.markdown(resource_card("MODULE 1", "Zerodha: Stock Markets", "Introduction to Stock Markets.", "https://zerodha.com/varsity/module/introduction-to-stock-markets/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 2", "Zerodha: Tech Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
+
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
