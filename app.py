@@ -46,7 +46,7 @@ st.markdown("""
         margin-top: 5px;
     }
 
-    /* HERO SECTION (01 ISN'T JUST TRADING) */
+    /* HERO SECTION */
     .hero-container {
         display: flex;
         align-items: flex-start;
@@ -70,13 +70,14 @@ st.markdown("""
         color: #ffffff;
     }
 
-    /* CARDS */
+    /* CARDS - MOBILE OPTIMIZED */
     .feature-card {
         background-color: #111;
         border: 1px solid #333;
         padding: 20px;
         border-radius: 0px;
-        height: 100%;
+        min-height: 200px; /* Ensures consistent height */
+        margin-bottom: 20px; /* Spacing between cards on mobile */
         transition: all 0.2s ease-in-out;
     }
     .feature-card:hover {
@@ -86,19 +87,24 @@ st.markdown("""
     }
     .card-letter {
         font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 900;
-        color: #333;
+        color: #444; /* Brightened from #333 for better visibility */
         margin-bottom: 10px;
+        opacity: 0.8;
     }
     .card-title {
         font-weight: bold;
         color: #fff;
         margin-bottom: 5px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
-    .card-desc { color: #bbb; font-size: 0.85rem; line-height: 1.4; }
+    .card-desc { 
+        color: #ccc; 
+        font-size: 0.9rem; 
+        line-height: 1.4; 
+    }
 
     /* RESOURCE LINKS */
     .resource-link {
@@ -114,6 +120,13 @@ st.markdown("""
         margin-bottom: 10px;
         display: inline-block;
         text-transform: uppercase;
+    }
+    
+    /* MOBILE ADJUSTMENTS */
+    @media (max-width: 600px) {
+        .hero-number { font-size: 5rem; }
+        .hero-headline { font-size: 2.5rem; }
+        .club-title { font-size: 1.5rem; }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -177,21 +190,17 @@ with tab_home:
         """, unsafe_allow_html=True)
 
     # Grid Layout
-    r1a, r1b = st.columns(2)
-    with r1a: card("A", "Deep Dive into Fintech", "Understand the intersection of finance, technology, and innovation.")
-    with r1b: card("D", "Exclusive Networking", "Engage with industry leaders, mentors, and talented peers.")
-    
-    st.write("") 
+    col_left, col_right = st.columns(2)
 
-    r2a, r2b = st.columns(2)
-    with r2a: card("B", "Real-World Experience", "Work on impactful projects and live simulations.")
-    with r2b: card("E", "Global Perspective", "Explore international fintech regulations and market opportunities.")
-
-    st.write("") 
-
-    r3a, r3b = st.columns(2)
-    with r3a: card("C", "Skill Enhancement", "Master quantitative finance, trading strategies, and AI tools.")
-    with r3b: card("F", "Competitions & Challenges", "Compete in hackathons, ideathons, and tech meets.")
+    with col_left:
+        card("A", "Deep Dive into Fintech", "Understand the intersection of finance, technology, and innovation.")
+        card("B", "Real-World Experience", "Work on impactful projects and live simulations.")
+        card("C", "Skill Enhancement", "Master quantitative finance, trading strategies, and AI tools.")
+        
+    with col_right:
+        card("D", "Exclusive Networking", "Engage with industry leaders, mentors, and talented peers.")
+        card("E", "Global Perspective", "Explore international fintech regulations and market opportunities.")
+        card("F", "Competitions & Challenges", "Compete in hackathons, ideathons, and tech meets.")
 
     st.markdown("<br><center><small style='color:#555;'>INVEST &nbsp;|&nbsp; STRATEGISE &nbsp;|&nbsp; INNOVATE</small></center>", unsafe_allow_html=True)
 
@@ -230,3 +239,4 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Tech Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
 
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
+
