@@ -213,6 +213,34 @@ with tab_resources:
     # 1. CLUB FILES
     st.subheader("Session Files")
     st.warning("⚠️ Session files will be uploaded after the Workshop.")
+    sessions = [
+        ("Session 1: Induction Session", "session1.pdf"),
+        ("Session 2: Workshop 1", "session2.pdf"),
+        ("Session 3: Workshop 2", "session3.pdf"),
+        ("Workshop Assets (ZIP)", "workshop_assets.zip")
+    ]
+    f1, f2 = st.columns(2)
+    
+    for index, (title, filename) in enumerate(sessions):
+        col = f1 if index % 2 == 0 else f2
+        
+        with col:
+            if os.path.exists(filename):
+                with open(filename, "rb") as f:
+                    st.download_button(
+                        label=f"⬇️ {title}",
+                        data=f,
+                        file_name=filename,
+                        mime="application/octet-stream",
+                        use_container_width=True
+                    )
+            else:
+                st.button(
+                    f"🔒 {title}", 
+                    disabled=True, 
+                    use_container_width=True, 
+                    key=f"missing_{index}"
+                )
     st.subheader("Project Files")
     def resource_card(tag, title, desc, link):
         return f"""
@@ -255,6 +283,7 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Technical Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
         
+
 
 
 
