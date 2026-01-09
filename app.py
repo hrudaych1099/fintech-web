@@ -226,9 +226,9 @@ with tab_resources:
     l1, l2 = st.columns(2)
 
     with l1:
-        st.markdown(resource_card("PYTHON", "Python Project", "Coming Soon!", ""), unsafe_allow_html=True)
+        st.markdown(resource_card("PYTHON", "Python Project", "🔒 Coming Soon!", ""), unsafe_allow_html=True)
     with l2:
-        st.markdown(resource_card("Analysis", "Fundamental Analysis Project", "Coming Soon!", ""), unsafe_allow_html=True)
+        st.markdown(resource_card("Analysis", "Fundamental Analysis Project", "🔒 Coming Soon!", ""), unsafe_allow_html=True)
     st.divider()
     st.subheader("External Uplinks")
     
@@ -254,6 +254,7 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Technical Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
         
+
 
 
 
