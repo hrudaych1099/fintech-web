@@ -213,7 +213,22 @@ with tab_resources:
     # 1. CLUB FILES
     st.subheader("Session Files")
     st.warning("⚠️ Session files will be uploaded after the Workshop.")
+    def resource_card(tag, title, desc, link):
+        return f"""
+        <div class="feature-card">
+            <span class="resource-tag">{tag}</span>
+            <a href="{link}" target="_blank" class="resource-link">
+                <div class="card-title" style="margin-top:10px;">{title} ↗</div>
+            </a>
+            <div class="card-desc">{desc}</div>
+        </div>
+        """
+    l1, l2 = st.columns(2)
 
+    with l1:
+        st.markdown(resource_card("PYTHON", "Algorithmic Trading Project", "Coming Soon.", ""), unsafe_allow_html=True)
+    with l2:
+        st.markdown(resource_card("Analysis", "Fundamental Analysis Project", "Coming Soon.", ""), unsafe_allow_html=True)
     st.divider()
     st.subheader("External Uplinks")
     
@@ -240,5 +255,6 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Tech Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("PROBABILITY", "Probability - 50 Challenging Problems", "50 Challenging Problems in Probability Solutions.", "https://youtube.com/playlist?list=PL3YfeZZ7Mdjmhucty7I55jX7RwS30pVAN&si=S9ctK3z-zBRkRGxY"), unsafe_allow_html=True)
+
 
 
