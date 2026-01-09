@@ -213,6 +213,7 @@ with tab_resources:
     # 1. CLUB FILES
     st.subheader("Session Files")
     st.warning("⚠️ Session files will be uploaded after the Workshop.")
+    st.subheader("Project Files")
     def resource_card(tag, title, desc, link):
         return f"""
         <div class="feature-card">
@@ -254,6 +255,7 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Technical Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
         
+
 
 
 
