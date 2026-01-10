@@ -215,8 +215,8 @@ with tab_resources:
     st.warning("⚠️ Session files will be uploaded after the Workshop.")
     sessions = [
         ("Session 1: Induction Session", "session1.pdf"),
-        ("Session 2: Workshop 1", "session2.pdf"),
-        ("Session 3: Workshop 2", "session3.pdf"),
+        ("Session: Workshop", "session2.pdf"),
+        ("Session: Workshop", "session3.pdf"),
         ("Workshop Assets (ZIP)", "workshop_assets.zip")
     ]
     f1, f2 = st.columns(2)
@@ -283,6 +283,7 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Technical Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
         
+
 
 
 
