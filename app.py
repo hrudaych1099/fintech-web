@@ -283,6 +283,24 @@ with tab_resources:
         st.markdown(resource_card("MODULE 2", "Zerodha: Technical Analysis", "Technical Analysis Guide.", "https://zerodha.com/varsity/module/technical-analysis/"), unsafe_allow_html=True)
         st.markdown(resource_card("MODULE 3", "Zerodha: Fundamental Analysis", "Fundamental Analysis Guide.", "https://zerodha.com/varsity/module/fundamental-analysis/"), unsafe_allow_html=True)
         
+    def resource_card(tag, title, desc, link):
+        return f"""
+        <div class="feature-card">
+            <span class="resource-tag">{tag}</span>
+            <a href="{link}" target="_blank" class="resource-link">
+                <div class="card-title" style="margin-top:10px;">{title} ↗</div>
+            </a>
+            <div class="card-desc">{desc}</div>
+        </div>
+        """
+    l1, l2 = st.columns(2)
+    st.subheader("Optional Resources")
+
+    with l1:
+        st.markdown(resource_card("PLAYLIST", "Time Series Analysis", "Time Series Analysis Playlist", "https://youtu.be/uBeM1FUk4Ps?si=U8oHTNlo7a0O4ee3"), unsafe_allow_html=True)
+    with l2:
+        st.markdown(resource_card("NEWS", "Trading Economics", "Stay Updates with News", "https://tradingeconomics.com/"), unsafe_allow_html=True)
+        
 
 
 
