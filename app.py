@@ -105,6 +105,46 @@ st.markdown("""
         font-size: 0.9rem; 
         line-height: 1.4; 
     }
+    /* RECRUITMENT TIMELINE */
+    .timeline-card {
+        border-left: 2px solid #333;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .timeline-dot {
+        position: absolute;
+        left: -6px;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .timeline-date {
+        color: #888;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .timeline-title {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 5px;
+    }
+    .timeline-status {
+        font-size: 0.7rem;
+        padding: 2px 6px;
+        border: 1px solid #444;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    .status-active { border-color: #0f0; color: #0f0; }
+    .status-done { border-color: #666; color: #666; text-decoration: line-through; }
+    .status-locked { border-color: #333; color: #333; }
 
     /* RESOURCE LINKS */
     .resource-link {
@@ -301,7 +341,79 @@ with tab_resources:
         st.markdown(resource_card("PLAYLIST", "Time Series Analysis", "Time Series Analysis Playlist.", "https://youtu.be/uBeM1FUk4Ps?si=U8oHTNlo7a0O4ee3"), unsafe_allow_html=True)
     with l2:
         st.markdown(resource_card("NEWS", "Trading Economics", "Stay Updated with News.", "https://tradingeconomics.com/"), unsafe_allow_html=True)
-        
+
+with tab_recruitment:
+    st.header("Recruitment '26")
+    st.caption("Follow the timeline closely. Dates are subject to change.")
+    st.info("📢 Keep checking this page for updates on venues and specific timings.")
+    timeline = [
+        {
+            "stage": "STAGE 01",
+            "title": "Inductions & Resource Sharing",
+            "date": "Jan 10 - Jan 15",
+            "desc": "Introduction to the club, distribution of learning materials, and initial briefing.",
+            "status": "active" # options: done, active, locked
+        },
+        {
+            "stage": "STAGE 02",
+            "title": "Workshops & Problem Statements",
+            "date": "TBD",
+            "desc": "Hands-on sessions on Python/Finance. Release of the Python and Fundamental Analysis Project Problem Statement.",
+            "status": "locked"
+        },
+        {
+            "stage": "STAGE 03",
+            "title": "Project Submission",
+            "date": "TBD",
+            "desc": "Deadline to submit your Project Reports.",
+            "status": "locked"
+        },
+        {
+            "stage": "STAGE 04",
+            "title": "The Aptitude Test",
+            "date": "TBD",
+            "desc": "A test covering Python, Probability & Stats, Logical Reasoning, and basic Finance concepts.",
+            "status": "locked"
+        },
+        {
+            "stage": "STAGE 05",
+            "title": "Shortlisting & Interviews",
+            "date": "TBD",
+            "desc": "Personal Interviews (PI) for shortlisted candidates.",
+            "status": "locked"
+        },
+        {
+            "stage": "STAGE 06",
+            "title": "Final Results",
+            "date": "TBD",
+            "desc": "Announcement of the new Core Team members.",
+            "status": "locked"
+        }
+    ]
+    st.write("") 
+
+    for item in timeline:
+        if item['status'] == 'done':
+            status_html = '<span class="timeline-status status-done">COMPLETED</span>'
+            color = "#666"
+        elif item['status'] == 'active':
+            status_html = '<span class="timeline-status status-active">LIVE NOW</span>'
+            color = "#fff"
+        else:
+            status_html = '<span class="timeline-status status-locked">LOCKED</span>'
+            color = "#333"
+
+        st.markdown(f"""
+        <div class="timeline-card" style="border-left-color: {color};">
+            <div class="timeline-dot" style="background-color: {color};"></div>
+            <div class="timeline-date">{item['date']} {status_html}</div>
+            <div class="timeline-title" style="color: {'#888' if item['status']=='locked' else '#fff'}">
+                {item['title']}
+            </div>
+            <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
 
 
 
