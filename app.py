@@ -359,7 +359,7 @@ with tab_recruitment:
         {
             "stage": "STAGE 02",
             "title": "Workshops & Problem Statements",
-            "date": "TBD",
+            "date": "Jan 16 & 17",
             "desc": "Hands-on sessions on Python/Finance. Release of the Python and Fundamental Analysis Project Problem Statement.",
             "status": "locked"
         },
@@ -415,6 +415,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
