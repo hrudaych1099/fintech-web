@@ -190,7 +190,7 @@ with c2:
 st.write("---")
 
 #NAVIGATION
-tab_home, tab_resources = st.tabs(["// MANIFESTO", "// RESOURCES"])
+tab_home, tab_resources, tab_recruitment = st.tabs(["// MANIFESTO", "// RESOURCES", "//RECRUITMENT"])
 
 with tab_home:
     st.markdown("""
@@ -413,6 +413,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
