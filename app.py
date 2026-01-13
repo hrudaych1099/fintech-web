@@ -298,10 +298,11 @@ with tab_resources:
     st.subheader("Optional Resources")
     l1, l2 = st.columns(2)
     with l1:
-        st.markdown(resource_card("PLAYLIST", "Time Series Analysis", "Time Series Analysis Playlist", "https://youtu.be/uBeM1FUk4Ps?si=U8oHTNlo7a0O4ee3"), unsafe_allow_html=True)
+        st.markdown(resource_card("PLAYLIST", "Time Series Analysis", "Time Series Analysis Playlist.", "https://youtu.be/uBeM1FUk4Ps?si=U8oHTNlo7a0O4ee3"), unsafe_allow_html=True)
     with l2:
-        st.markdown(resource_card("NEWS", "Trading Economics", "Stay Updates with News", "https://tradingeconomics.com/"), unsafe_allow_html=True)
+        st.markdown(resource_card("NEWS", "Trading Economics", "Stay Updated with News.", "https://tradingeconomics.com/"), unsafe_allow_html=True)
         
+
 
 
 
