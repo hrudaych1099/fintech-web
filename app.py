@@ -339,8 +339,10 @@ with tab_resources:
     l1, l2 = st.columns(2)
     with l1:
         st.markdown(resource_card("PLAYLIST", "Time Series Analysis", "Time Series Analysis Playlist.", "https://youtu.be/uBeM1FUk4Ps?si=U8oHTNlo7a0O4ee3"), unsafe_allow_html=True)
-    with l2:
         st.markdown(resource_card("NEWS", "Trading Economics", "Stay Updated with News.", "https://tradingeconomics.com/"), unsafe_allow_html=True)
+    with l2:
+        st.markdown(resource_card("VIDEO", "Algorithmic Trading", "Algorithmic Trading using Python - freeCodeCamp.", "https://youtu.be/xfzGZB4HhEE?si=2CP_zJOLLZitC90n"), unsafe_allow_html=True)
+        st.markdown(resource_card("VIDEO", "Probability Questions", "Extra Questions in Probability.", "https://youtu.be/GrDHw3mfLj8?si=HTtknQI6NniXWc7R"), unsafe_allow_html=True)
 
 with tab_recruitment:
     st.header("Recruitment '26")
@@ -413,6 +415,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
