@@ -145,6 +145,7 @@ st.markdown("""
     .status-active { border-color: #0f0; color: #0f0; }
     .status-done { border-color: #666; color: #666; text-decoration: line-through; }
     .status-locked { border-color: #333; color: #333; }
+    .status-upcoming { border-color: #ffd700; color: #ffd700; }
 
     /* RESOURCE LINKS */
     .resource-link {
@@ -354,14 +355,14 @@ with tab_recruitment:
             "title": "Inductions & Resource Sharing",
             "date": "Jan 10 - Jan 15",
             "desc": "Introduction to the club, distribution of learning materials, and initial briefing.",
-            "status": "active" # options: done, active, locked
+            "status": "active" #options: done, active, locked
         },
         {
             "stage": "STAGE 02",
             "title": "Workshops & Problem Statements",
             "date": "Jan 16 & 17",
             "desc": "Hands-on sessions on Python/Finance. Release of the Python and Fundamental Analysis Project Problem Statement.",
-            "status": "locked"
+            "status": "upcoming"
         },
         {
             "stage": "STAGE 03",
@@ -401,6 +402,9 @@ with tab_recruitment:
         elif item['status'] == 'active':
             status_html = '<span class="timeline-status status-active">LIVE NOW</span>'
             color = "#fff"
+        elif item['status'] == 'upcoming':
+            status_html = '<span class="timeline-status status-upcoming">UPCOMING</span>'
+            color = "#ffd700"
         else:
             status_html = '<span class="timeline-status status-locked">LOCKED</span>'
             color = "#333"
@@ -415,6 +419,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
