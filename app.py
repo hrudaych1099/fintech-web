@@ -355,7 +355,7 @@ with tab_recruitment:
             "title": "Inductions & Resource Sharing",
             "date": "Jan 10 - Jan 15",
             "desc": "Introduction to the club, distribution of learning materials, and initial briefing.",
-            "status": "done" #options: done, active, locked
+            "status": "active" #options: done, active, locked
         },
         {
             "stage": "STAGE 02",
@@ -367,9 +367,9 @@ with tab_recruitment:
         {
             "stage": "STAGE 03",
             "title": "Project Submission",
-            "date": "TBD",
+            "date": "Jan 26 & 27",
             "desc": "Deadline to submit your Project Reports.",
-            "status": "locked"
+            "status": "upcoming"
         },
         {
             "stage": "STAGE 04",
@@ -419,6 +419,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
