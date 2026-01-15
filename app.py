@@ -355,7 +355,7 @@ with tab_recruitment:
             "title": "Inductions & Resource Sharing",
             "date": "Jan 10 - Jan 15",
             "desc": "Introduction to the club, distribution of learning materials, and initial briefing.",
-            "status": "active" #options: done, active, locked
+            "status": "done" #options: done, active, locked
         },
         {
             "stage": "STAGE 02",
@@ -419,6 +419,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
