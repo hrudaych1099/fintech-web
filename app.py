@@ -256,8 +256,8 @@ with tab_resources:
     st.warning("⚠️ Session files will be uploaded after the Workshop.")
     sessions = [
         ("Session 1: Induction Session", "session1.pdf"),
-        ("Session: Workshop", "session2.pdf"),
-        ("Session: Workshop", "session3.pdf"),
+        ("Workshop: Python", "session2.pdf"),
+        ("Workshop: Fundamental Analysis", "session3.pdf"),
         ("Workshop Assets (ZIP)", "workshop_assets.zip")
     ]
     f1, f2 = st.columns(2)
@@ -419,6 +419,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
