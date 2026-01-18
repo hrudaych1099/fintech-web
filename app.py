@@ -253,7 +253,6 @@ with tab_resources:
 
     # 1. CLUB FILES
     st.subheader("Session Files")
-    st.warning("⚠️ Session files will be uploaded after the Workshop.")
     sessions = [
         ("Session 1: Induction Session", "session1.pdf"),
         ("Workshop: Python", "session2.pdf"),
@@ -419,6 +418,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
