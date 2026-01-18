@@ -296,9 +296,9 @@ with tab_resources:
     l1, l2 = st.columns(2)
 
     with l1:
-        st.markdown(resource_card("PYTHON", "Python Project", "🔒 Coming Soon!", ""), unsafe_allow_html=True)
+        st.markdown(resource_card("Analysis", "Fundamental Analysis Project", "Problem Statement Uploaded!", "https://www.canva.com/design/DAG-xtVe9Xc/soH_5e6zUNf_gNdTNyLHQg/view?utm_content=DAG-xtVe9Xc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3fce4eb63f"), unsafe_allow_html=True)
     with l2:
-        st.markdown(resource_card("Analysis", "Fundamental Analysis Project", "🔒 Coming Soon!", ""), unsafe_allow_html=True)
+        st.markdown(resource_card("PYTHON", "Python Project", "🔒 Coming Soon!", ""), unsafe_allow_html=True) 
     st.divider()
     st.subheader("External Uplinks")
     
@@ -419,6 +419,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
