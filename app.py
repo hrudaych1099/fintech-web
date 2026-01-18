@@ -362,12 +362,12 @@ with tab_recruitment:
             "title": "Workshops & Problem Statements",
             "date": "Jan 17 & 18",
             "desc": "Hands-on sessions on Python/Finance. Release of the Python and Fundamental Analysis Project Problem Statement.",
-            "status": "active"
+            "status": "done"
         },
         {
             "stage": "STAGE 03",
             "title": "Project Submission",
-            "date": "Jan 26 & 27",
+            "date": "Jan 28",
             "desc": "Deadline to submit your Project Reports.",
             "status": "upcoming"
         },
@@ -419,6 +419,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
