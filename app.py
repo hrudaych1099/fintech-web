@@ -373,9 +373,9 @@ with tab_recruitment:
         {
             "stage": "STAGE 04",
             "title": "The Aptitude Test",
-            "date": "TBD",
+            "date": "Jan 30",
             "desc": "A test covering Python, Probability & Stats, Logical Reasoning, and basic Finance concepts.",
-            "status": "locked"
+            "status": "upcoming"
         },
         {
             "stage": "STAGE 05",
@@ -418,6 +418,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
