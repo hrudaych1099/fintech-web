@@ -365,27 +365,34 @@ with tab_recruitment:
         },
         {
             "stage": "STAGE 03",
+            "title": "Doubt Session (Project)",
+            "date": "Jan 24",
+            "desc": "Doubt Session to clear issues regarding Projects.",
+            "status": "upcoming"
+        },
+        {
+            "stage": "STAGE 04",
             "title": "Project Submission",
             "date": "Jan 28",
             "desc": "Deadline to submit your Project Reports.",
             "status": "upcoming"
         },
         {
-            "stage": "STAGE 04",
+            "stage": "STAGE 05",
             "title": "The Aptitude Test",
             "date": "Jan 30",
             "desc": "A test covering Python, Probability & Stats, Logical Reasoning, and basic Finance concepts.",
             "status": "upcoming"
         },
         {
-            "stage": "STAGE 05",
+            "stage": "STAGE 06",
             "title": "Shortlisting & Interviews",
             "date": "TBD",
             "desc": "Personal Interviews (PI) for shortlisted candidates.",
             "status": "locked"
         },
         {
-            "stage": "STAGE 06",
+            "stage": "STAGE 07",
             "title": "Final Results",
             "date": "TBD",
             "desc": "Announcement of the new Core Team members.",
@@ -418,6 +425,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
