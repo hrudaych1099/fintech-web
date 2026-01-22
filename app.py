@@ -373,7 +373,7 @@ with tab_recruitment:
         {
             "stage": "STAGE 04",
             "title": "Project Submission",
-            "date": "Jan 28",
+            "date": "Jan 25-28",
             "desc": "Deadline to submit your Project Reports.",
             "status": "upcoming"
         },
@@ -425,6 +425,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
