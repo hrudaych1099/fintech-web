@@ -366,7 +366,7 @@ with tab_recruitment:
         {
             "stage": "STAGE 03",
             "title": "Doubt Session (Project)",
-            "date": "Jan 24",
+            "date": "Jan 25",
             "desc": "Doubt Session to clear issues regarding Projects.",
             "status": "upcoming"
         },
@@ -425,6 +425,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
