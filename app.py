@@ -377,12 +377,12 @@ with tab_recruitment:
             "title": "Project Submission",
             "date": "Jan 25-28",
             "desc": "Deadline to submit your Project Reports.",
-            "status": "active"
+            "status": "done"
         },
         {
             "stage": "STAGE 05",
-            "title": "The Aptitude Test",
-            "date": "Jan 30",
+            "title": "The Recruitment Test",
+            "date": "Jan 31",
             "desc": "A test covering Python, Probability & Stats, Logical Reasoning, and basic Finance concepts.",
             "status": "upcoming"
         },
@@ -427,6 +427,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
