@@ -384,14 +384,14 @@ with tab_recruitment:
             "title": "The Recruitment Test",
             "date": "Jan 31",
             "desc": "A test covering Python, Probability & Stats, Logical Reasoning, and basic Finance concepts.",
-            "status": "upcoming"
+            "status": "done"
         },
         {
             "stage": "STAGE 06",
             "title": "Shortlisting & Interviews",
             "date": "TBD",
             "desc": "Personal Interviews (PI) for shortlisted candidates.",
-            "status": "locked"
+            "status": "upcoming"
         },
         {
             "stage": "STAGE 07",
@@ -427,6 +427,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
