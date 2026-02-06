@@ -391,14 +391,14 @@ with tab_recruitment:
             "title": "Shortlisting & Interviews",
             "date": "TBD",
             "desc": "Personal Interviews (PI) for shortlisted candidates.",
-            "status": "upcoming"
+            "status": "done"
         },
         {
             "stage": "STAGE 07",
             "title": "Final Results",
             "date": "TBD",
             "desc": "Announcement of the new Core Team members.",
-            "status": "locked"
+            "status": "upcoming"
         }
     ]
     st.write("") 
@@ -427,6 +427,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
