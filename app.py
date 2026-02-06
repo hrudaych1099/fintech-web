@@ -389,7 +389,7 @@ with tab_recruitment:
         {
             "stage": "STAGE 06",
             "title": "Shortlisting & Interviews",
-            "date": "TBD",
+            "date": "Jan 3-4",
             "desc": "Personal Interviews (PI) for shortlisted candidates.",
             "status": "done"
         },
@@ -427,6 +427,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
