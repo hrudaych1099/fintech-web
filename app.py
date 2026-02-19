@@ -356,7 +356,7 @@ with tab_recruitment:
             "title": "Inductions & Resource Sharing",
             "date": "Jan 10",
             "desc": "Introduction to the club, distribution of learning materials, and initial briefing.",
-            "status": "active" #options: done, active, locked
+            "status": "done" #options: done, active, locked
         },
         {
             "stage": "STAGE 02",
@@ -396,9 +396,9 @@ with tab_recruitment:
         {
             "stage": "STAGE 07",
             "title": "Final Results",
-            "date": "TBD",
+            "date": "13th February",
             "desc": "Announcement of the new Core Team members.",
-            "status": "upcoming"
+            "status": "active"
         }
     ]
     st.write("") 
@@ -427,6 +427,7 @@ with tab_recruitment:
             <div style="color: #888; margin-top: 5px;">{item['desc']}</div>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
